@@ -1,0 +1,390 @@
+/* variables */
+/* variables */
+/* end variables */
+/* mixins */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+/* end mixins */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* end reset */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f9f8f4;
+  color: #3d4349;
+  font-size: 16px;
+  min-width: 320px;
+  letter-spacing: 1px;
+}
+body a {
+  color: inherit;
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: underline;
+}
+nav {
+  background-color: #3d4349;
+  color: #bb99dd;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.6px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+}
+nav .section-link {
+  padding: 18px;
+  display: inline-block;
+}
+nav .section-link.current {
+  background-color: #61a9aa;
+  color: #f9f8f4;
+}
+header {
+  background: #3d4349;
+  color: #bb99dd;
+  text-align: center;
+  padding: 60px 40px;
+}
+h1 {
+  font-size: 80px;
+  font-family: 'Forum', cursive;
+}
+h2 {
+  font-size: 28px;
+  font-family: 'Forum', cursive;
+  letter-spacing: 1.6px;
+  line-height: 1.6em;
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+h2 span {
+  color: #3d4349;
+  margin: 0 8px;
+}
+.contact {
+  position: relative;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.6em;
+}
+.contact p {
+  margin-bottom: 10px;
+  letter-spacing: 1.6px;
+}
+.contact a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.contact svg {
+  width: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contact .message {
+  margin-bottom: 20px;
+}
+.image-row {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.image {
+  flex: 1;
+  padding: 20px;
+}
+.image img {
+  width: 100%;
+  border: 1px solid #737276;
+}
+.video-row {
+  text-align: center;
+  font-size: 0;
+  letter-spacing: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.video {
+  max-width: 25%;
+  padding: 0 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  height: auto;
+}
+.video iframe {
+  width: 100%;
+}
+section {
+  padding: 60px;
+  clear: both;
+  position: relative;
+}
+section:nth-child(even) {
+  background-color: #f2f1ed;
+}
+section h3 {
+  text-align: center;
+  color: #61a9aa;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+section h3::after {
+  content: '';
+  width: 60px;
+  height: 1px;
+  margin: 12px auto 0 auto;
+  background-color: rgba(92, 75, 81, 0.2);
+  display: block;
+}
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.artist-bios {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.bio {
+  font-weight: 300;
+  line-height: 1.6em;
+  width: 47%;
+  font-size: 18px;
+}
+.bio h4 {
+  font-size: 24px;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.bio img {
+  width: 40%;
+  float: left;
+  margin: 0 30px 10px 0;
+  border: 1px solid #e0e0e0;
+}
+.bio a {
+  color: #3d4349;
+  font-weight: 400;
+}
+.bio p {
+  margin-bottom: 10px;
+}
+/* start responsive */
+@media screen and (max-width: 1200px) {
+  .image-row {
+    padding: 10px;
+  }
+  .image-row .image {
+    padding: 10px;
+  }
+  .video-row {
+    width: 700px;
+  }
+  .video {
+    max-width: 50%;
+    padding: 5px;
+  }
+  .bio h4 {
+    font-size: 18px;
+  }
+  .bio img {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .bio h4 {
+    font-size: 24px;
+  }
+  .bio img {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 710px) {
+  .bio h4 {
+    font-size: 18px;
+  }
+  section {
+    padding: 30px;
+  }
+  section h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  nav {
+    position: relative;
+  }
+  nav .section-link {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  header {
+    padding: 60px 40px 35px;
+  }
+  h1 {
+    font-size: 54px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .contact {
+    font-size: 15px;
+  }
+  .contact p {
+    margin-bottom: 5px;
+  }
+  .contact svg {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .image-row {
+    display: block;
+  }
+  .video-row {
+    width: 100%;
+  }
+  .video {
+    max-width: 100%;
+  }
+  .artist-bios {
+    display: block;
+  }
+  .artist-bios .bio {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  header {
+    padding: 50px 30px 25px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+}
+/* end responsive */
